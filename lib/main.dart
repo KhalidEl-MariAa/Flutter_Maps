@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_maps/pages/home_page.dart';
+import 'package:flutter_maps/pages/map_page.dart';
 
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        'homepage': (context) => const HomePage()
+        'homepage': (context) => const HomePage(),
+        'mappage':(context) => const MapPage()
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
